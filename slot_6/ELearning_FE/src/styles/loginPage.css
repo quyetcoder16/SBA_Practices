@@ -1,0 +1,156 @@
+/* LoginPage.css */
+.lp-wrap {
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  background: linear-gradient(135deg, #9b7cff 0%, #cfc7ff 50%, #e7e4ff 100%);
+  padding: 28px 12px;
+}
+
+.lp-card {
+  border-radius: 18px;
+  overflow: hidden;
+}
+
+.lp-title {
+  letter-spacing: 0.2px;
+}
+
+.lp-input .lp-icon-left {
+  background: #ffffff;
+  border-right: 0;
+  color: #6d4cff;
+  font-size: 18px;
+}
+
+.lp-control {
+  border-left: 0;
+  padding: 12px 14px;
+  border-radius: 10px;
+}
+
+.lp-input .form-control:focus {
+  box-shadow: none;
+  border-color: #d7d7d7;
+}
+
+.lp-input .input-group-text,
+.lp-input .form-control {
+  border-color: #e3e3e3;
+}
+
+.lp-input .input-group-text {
+  border-top-left-radius: 10px;
+  border-bottom-left-radius: 10px;
+}
+
+.lp-eye {
+  text-decoration: none !important;
+  color: #8a8a8a;
+  border: 1px solid #e3e3e3;
+  border-left: 0;
+  border-top-right-radius: 10px;
+  border-bottom-right-radius: 10px;
+  padding: 0 14px;
+  display: flex;
+  align-items: center;
+}
+
+.lp-eye:hover {
+  color: #4d4d4d;
+}
+
+.lp-remember .form-check-input {
+  border-color: #cfcfcf;
+}
+
+.lp-remember .form-check-input:focus {
+  box-shadow: none;
+}
+
+.lp-link {
+  color: #2f5bff;
+  font-weight: 600;
+  text-decoration: none;
+}
+
+.lp-link:hover {
+  text-decoration: underline;
+}
+
+.lp-login-btn {
+  background: #2f5bff !important;
+  border: none !important;
+  border-radius: 999px !important;
+  padding: 12px 14px !important;
+  font-weight: 600 !important;
+}
+
+.lp-login-btn:hover {
+  filter: brightness(0.95);
+}
+
+.lp-muted {
+  color: #6f6f6f;
+}
+
+.lp-divider {
+  position: relative;
+  text-align: center;
+  color: #6f6f6f;
+  font-weight: 600;
+}
+
+.lp-divider::before,
+.lp-divider::after {
+  content: "";
+  position: absolute;
+  top: 50%;
+  width: 36%;
+  height: 1px;
+  background: #e5e5e5;
+}
+
+.lp-divider::before {
+  left: 0;
+}
+
+.lp-divider::after {
+  right: 0;
+}
+
+.lp-divider span {
+  background: #fff;
+  padding: 0 10px;
+}
+
+.lp-social {
+  width: 44px;
+  height: 44px;
+  border-radius: 999px;
+  border: 1px solid #ececec;
+  background: #fff;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 18px;
+  cursor: pointer;
+  transition: transform 120ms ease, box-shadow 120ms ease;
+}
+
+.lp-social:hover {
+  transform: translateY(-1px);
+  box-shadow: 0 8px 18px rgba(0, 0, 0, 0.08);
+}
+
+.lp-social-fb {
+  color: #1877f2;
+}
+
+.lp-social-gg {
+  color: inherit;
+}
+
+.lp-social-gh {
+  color: #111;
+}
