@@ -1,0 +1,124 @@
+{
+  "courses": [
+    {
+      "id": 1,
+      "title": "Master ReactJS from Zero to Hero",
+      "author": "John Doe",
+      "price": 35,
+      "rating": 4.8,
+      "classes": 24,
+      "students": 520,
+      "image": "https://images.unsplash.com/photo-1633356122544-f134324a6cee?q=80&w=1200",
+      "category": "FE",
+      "level": "Beginner"
+    },
+    {
+      "id": 2,
+      "title": "NodeJS & Express Backend Ultimate",
+      "author": "Michael Brown",
+      "price": 40,
+      "rating": 4.9,
+      "classes": 22,
+      "students": 600,
+      "image": "https://images.unsplash.com/photo-1627398242454-45a1465c2479?q=80&w=1200",
+      "category": "BE",
+      "level": "Intermediate"
+    },
+    {
+      "id": 3,
+      "title": "Advanced JavaScript Patterns",
+      "author": "Sarah Parker",
+      "price": 30,
+      "rating": 3.5,
+      "classes": 18,
+      "students": 410,
+      "image": "https://images.unsplash.com/photo-1579468118864-1b9ea3c0db4a?q=80&w=1200",
+      "category": "FE",
+      "level": "Expert"
+    },
+    {
+      "id": 4,
+      "title": "Java Spring Boot Microservices",
+      "author": "David Lee",
+      "price": 55,
+      "rating": 5.0,
+      "classes": 30,
+      "students": 850,
+      "image": "https://images.unsplash.com/photo-1517694712202-14dd9538aa97?q=80&w=1200",
+      "category": "BE",
+      "level": "Expert"
+    },
+    {
+      "id": 5,
+      "title": "HTML & CSS for Absolute Beginners",
+      "author": "Anna Smith",
+      "price": 15,
+      "rating": 4.2,
+      "classes": 10,
+      "students": 200,
+      "image": "https://images.unsplash.com/photo-1517134191118-9d595e4c8c2b?q=80&w=1200",
+      "category": "FE",
+      "level": "Beginner"
+    },
+    {
+      "id": 6,
+      "title": "PostgreSQL Database Administration",
+      "author": "Chris Evans",
+      "price": 28,
+      "rating": 4.8,
+      "classes": 14,
+      "students": 360,
+      "image": "https://images.unsplash.com/photo-1544383835-bda2bc66a55d?q=80&w=1200",
+      "category": "BE",
+      "level": "Intermediate"
+    },
+    {
+      "id": 7,
+      "title": "Redux Toolkit State Management",
+      "author": "Sophia Miller",
+      "price": 32,
+      "rating": 2.9,
+      "classes": 16,
+      "students": 420,
+      "image": "https://images.unsplash.com/photo-1593720213428-28a5b9e94613?q=80&w=1200",
+      "category": "FE",
+      "level": "Intermediate"
+    },
+    {
+      "id": 8,
+      "title": "Docker & Kubernetes for Backend",
+      "author": "Daniel Wilson",
+      "price": 45,
+      "rating": 4.7,
+      "classes": 20,
+      "students": 780,
+      "image": "https://images.unsplash.com/photo-1605745341112-85968b19335b?q=80&w=1200",
+      "category": "BE",
+      "level": "Expert"
+    },
+    {
+      "id": 9,
+      "title": "VueJS 3 Composition API",
+      "author": "Vue Master",
+      "price": 25,
+      "rating": 4.5,
+      "classes": 15,
+      "students": 300,
+      "image": "https://images.unsplash.com/photo-1607799275518-d58665d099db?q=80&w=1200",
+      "category": "FE",
+      "level": "Intermediate"
+    },
+    {
+      "id": 10,
+      "title": "Python Django Rest Framework",
+      "author": "Py Guru",
+      "price": 50,
+      "rating": 4.1,
+      "classes": 25,
+      "students": 650,
+      "image": "https://images.unsplash.com/photo-1526374965328-7f61d4dc18c5?q=80&w=1200",
+      "category": "BE",
+      "level": "Beginner"
+    }
+  ]
+}
