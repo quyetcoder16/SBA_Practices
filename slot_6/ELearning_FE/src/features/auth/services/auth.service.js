@@ -11,10 +11,21 @@ export const auth = {
           email: "admin@example.com",
         },
         accessToken: "ACCESS_TOKEM_SAMPLE",
-    };
+      };
     } else throw new Error("Invalid credentials!");
   },
-  logout: async () => {},
-  register: async (payload) => {},
-  refreshToke: async () => {},
+  logout: async () => { },
+  register: async (payload) => {
+
+    return fetch("http://localhost:3001/users", {
+      method: "POST",
+      headers: {
+        "Content-Type": "application/json",
+      },
+      body: JSON.stringify(payload),
+    });
+
+
+  },
+  refreshToke: async () => { },
 };

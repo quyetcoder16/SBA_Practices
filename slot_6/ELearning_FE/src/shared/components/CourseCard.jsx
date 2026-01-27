@@ -5,15 +5,31 @@ import { Link } from 'react-router-dom';
 
 const CourseCard = ({ course }) => {
 
+  const [url, setUrl] = useState(course.image);
+
 
   const { addToCart } = useCartDispatch()
+
+
+  const renderImage = new Promise((resolve, reject) => {
+    const img = new Image();
+    img.src = course.image;
+    img.onload = () => resolve(true);
+    img.onerror = () => reject(false);
+  });
+
+  renderImage.then(() => {
+    setUrl(course.image);
+  }).catch(() => {
+    setUrl('https://upload.wikimedia.org/wikipedia/commons/thumb/2/2c/Default_pfp.svg/500px-Default_pfp.svg.png');
+  });
 
   return (
     <Card className="shadow-sm border-1 rounded-4 overflow-hidden my-3" style={{ width: "100%" }}>
       {/* Image + badge overlay */}
       <div className="position-relative">
         <Card.Img
-          src={course.image}
+          src={url}
           alt="cover"
           style={{ height: 170, objectFit: "cover" }}
         />

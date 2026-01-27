@@ -11,8 +11,6 @@ const PublicCoursePage = () => {
   const [courses, setCourses] = useState(useLoaderData());
   const [searchParams, setSearchParams] = useSearchParams();
 
-
-
   const filters = useMemo(() => ({
     category: searchParams.get("category") || "All",
     minRating: Number(searchParams.get("minRating")) || 0,
