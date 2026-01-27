@@ -1,10 +1,8 @@
 import React, { createContext, useReducer, useEffect, useMemo, useContext, useCallback } from 'react';
 
-// 1. Khởi tạo Context
 export const CartStateContext = createContext();
 export const CartDispatchContext = createContext();
 
-// 2. Initial State & Action Types
 const initialState = {
     items: JSON.parse(localStorage.getItem("cart_items")) || [],
 };
@@ -17,8 +15,7 @@ const ACTION_TYPES = {
     CLEAR: "CLEAR_CART",
 };
 
-// 3. Reducer Function (Trái tim của logic)
-// Pure function: Input giống nhau -> Output luôn giống nhau
+
 const cartReducer = (state, action) => {
     switch (action.type) {
         case ACTION_TYPES.ADD: {

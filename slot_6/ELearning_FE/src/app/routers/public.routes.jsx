@@ -6,10 +6,11 @@ import PublicCoursePage from '@/features/courses/pages/PublicCoursePage';
 import courseService from '@/features/courses/services/course.service';
 import PublicCourseDetail from '@/features/courses/pages/PublicCourseDetail';
 import CartPage from '@/features/Cart/pages/CartPage';
+import RegisterPage from '@/features/auth/pages/RegisterPage';
 
 const publicRoutes = [
     { path: "/login", element: <LoginPage /> },
-    { path: "/register", element: <LoginPage /> },
+    { path: "/register", element: <RegisterPage /> },
     {
         path: "/", element: <PublicLayout />,
         children: [
