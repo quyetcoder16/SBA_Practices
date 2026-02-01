@@ -1,0 +1,85 @@
+{
+  "SystemAccount": [
+    {
+      "id": "1",
+      "AccountID": 1,
+      "AccountName": "Admin",
+      "AccountEmail": "Admin",
+      "AccountRole": 1,
+      "AccountPassword": "Admin"
+    },
+    {
+      "id": "2",
+      "AccountID": 2,
+      "AccountName": "Staff User",
+      "AccountEmail": "staff@funews.edu.vn",
+      "AccountRole": 2,
+      "AccountPassword": "StaffPassword"
+    },
+    {
+      "id": "1769936664737",
+      "AccountName": "quyet",
+      "AccountEmail": "quyet@gmail.com",
+      "AccountRole": 1,
+      "AccountID": 1769936664737
+    }
+  ],
+  "Category": [
+    {
+      "id": "1",
+      "CategoryID": 1,
+      "CategoryName": "Campus News",
+      "CategoryDescription": "Latest happenings around the campus",
+      "ParentCategoryID": null,
+      "IsActive": 1
+    },
+    {
+      "id": "2",
+      "CategoryID": 2,
+      "CategoryName": "Academic",
+      "CategoryDescription": "Academic achievements and schedules",
+      "ParentCategoryID": null,
+      "IsActive": 1
+    }
+  ],
+  "NewsArticle": [
+    {
+      "id": "1",
+      "NewsArticleID": 1,
+      "NewsTitle": "Welcome to FUNews",
+      "Headline": "The start of a new digital era for our institution",
+      "CreatedDate": "2026-02-01T08:00:00Z",
+      "NewsContent": "We are proud to launch the FUNews Management System...",
+      "NewsSource": "Internal",
+      "CategoryID": 1,
+      "NewsStatus": 1,
+      "CreatedByID": 1,
+      "UpdatedByID": 1,
+      "ModifiedDate": "2026-02-01T08:00:00Z"
+    }
+  ],
+  "Tag": [
+    {
+      "id": "1",
+      "TagID": 1,
+      "TagName": "Event"
+    },
+    {
+      "id": "2",
+      "TagID": 2,
+      "TagName": "New"
+    }
+  ],
+  "NewsTag": [
+    {
+      "id": "1",
+      "NewsArticleID": 1,
+      "TagID": 1
+    },
+    {
+      "id": "2",
+      "NewsArticleID": 1,
+      "TagID": 2
+    }
+  ]
+}
