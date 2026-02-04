@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useContext } from 'react';
 import { NavLink } from 'react-router-dom';
 import {
     RiDashboardLine,
@@ -7,20 +7,29 @@ import {
     RiStackLine,
     RiNewspaperLine
 } from 'react-icons/ri';
+import { AuthStatesContext } from '@/app/provider/AuthProvider';
 
 export default function Navbar() {
+
+    const { userContext } = useContext(AuthStatesContext);
+
+
 
     const getNavLinkClass = ({ isActive }) => {
         const baseClass = "nav-link d-flex align-items-center px-3 py-2 fs-6 transition-all rounded-3 mb-2";
         return `${baseClass} ${isActive ? "active-style shadow-sm" : "text-secondary"}`;
     };
 
-    const menuItems = [
+    const menuItems = userContext?.role == 1 ? [
         { path: "/", label: "Dashboard", icon: <RiDashboardLine /> },
         { path: "/category", label: "Category", icon: <RiStackLine /> },
         { path: "/news", label: "News", icon: <RiNewspaperLine /> },
         { path: "/users", label: "Users", icon: <RiUserLine /> },
         { path: "/settings", label: "Settings", icon: <RiSettings3Line /> },
+    ] : [
+        { path: "/", label: "Dashboard", icon: <RiDashboardLine /> },
+        { path: "/category", label: "Category", icon: <RiStackLine /> },
+        { path: "/news", label: "News", icon: <RiNewspaperLine /> },
     ];
 
     return (
