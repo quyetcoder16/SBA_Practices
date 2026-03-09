@@ -2,9 +2,9 @@ spring:
   application:
     name: Lab04_QuyetDXHE186796
   datasource:
-    url: jdbc:sqlserver://localhost:1435;databaseName=OrchidDB;encrypt=true;trustServerCertificate=true
+    url: jdbc:sqlserver://localhost:1435;databaseName=orchid_db26;encrypt=true;trustServerCertificate=true
     username: sa
-    password: Quyet@123
+    password: 123456789
     driver-class-name: com.microsoft.sqlserver.jdbc.SQLServerDriver
   jpa:
     show-sql: true
