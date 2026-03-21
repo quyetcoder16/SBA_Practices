@@ -21,6 +21,7 @@ public enum ErrorCode {
 
     // Category
     CATEGORY_NOT_FOUND(3001, "Category not found", HttpStatus.NOT_FOUND),
+    CATEGORY_HAS_ASSOCIATED_ARTICLES(3002, "Category has associated article(s) and cannot be deleted", HttpStatus.BAD_REQUEST),
 
     // NewsArticle
     NEWS_ARTICLE_NOT_FOUND(4001, "News article not found", HttpStatus.NOT_FOUND),
